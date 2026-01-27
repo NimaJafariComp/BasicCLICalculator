@@ -1,0 +1,2 @@
+/Users/nimajafari/Programming/comp585/BasicCalculatorPart1/bin/Release/net10.0/osx-x64/publish/BasicCalculatorPart1.pdb
+/Users/nimajafari/Programming/comp585/BasicCalculatorPart1/bin/Release/net10.0/osx-x64/publish/BasicCalculatorPart1

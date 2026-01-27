@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "UDQeAhqdFdM=",
+  "success": true,
+  "projectFilePath": "/Users/nimajafari/Programming/comp585/BasicCalculatorPart1/BasicCalculatorPart1.csproj",
+  "expectedPackageFiles": [
+    "/Users/nimajafari/.nuget/packages/microsoft.net.illink.tasks/10.0.2/microsoft.net.illink.tasks.10.0.2.nupkg.sha512",
+    "/Users/nimajafari/.nuget/packages/microsoft.netcore.app.runtime.osx-x64/10.0.2/microsoft.netcore.app.runtime.osx-x64.10.0.2.nupkg.sha512",
+    "/Users/nimajafari/.nuget/packages/microsoft.aspnetcore.app.runtime.osx-x64/10.0.2/microsoft.aspnetcore.app.runtime.osx-x64.10.0.2.nupkg.sha512",
+    "/Users/nimajafari/.nuget/packages/microsoft.netcore.app.host.osx-x64/10.0.2/microsoft.netcore.app.host.osx-x64.10.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
