@@ -9,7 +9,7 @@
         }
       }
     },
-    "net10.0/osx-x64": {
+    "net10.0/osx-arm64": {
       "Microsoft.NET.ILLink.Tasks/10.0.2": {
         "type": "package",
         "build": {
@@ -81,11 +81,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nimajafari/Programming/comp585/BasicCalculatorPart1/BasicCalculatorPart1.csproj",
+      "projectUniqueName": "/Users/nimajafari/Programming/git_repos/BasicCLICalculator/BasicCalculatorPart1.csproj",
       "projectName": "BasicCalculatorPart1",
-      "projectPath": "/Users/nimajafari/Programming/comp585/BasicCalculatorPart1/BasicCalculatorPart1.csproj",
+      "projectPath": "/Users/nimajafari/Programming/git_repos/BasicCLICalculator/BasicCalculatorPart1.csproj",
       "packagesPath": "/Users/nimajafari/.nuget/packages/",
-      "outputPath": "/Users/nimajafari/Programming/comp585/BasicCalculatorPart1/obj/",
+      "outputPath": "/Users/nimajafari/Programming/git_repos/BasicCLICalculator/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/nimajafari/.nuget/NuGet/NuGet.Config"
@@ -138,15 +138,11 @@
         "warn": true,
         "downloadDependencies": [
           {
-            "name": "Microsoft.AspNetCore.App.Runtime.osx-x64",
+            "name": "Microsoft.AspNetCore.App.Runtime.osx-arm64",
             "version": "[10.0.2, 10.0.2]"
           },
           {
-            "name": "Microsoft.NETCore.App.Host.osx-x64",
-            "version": "[10.0.2, 10.0.2]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Runtime.osx-x64",
+            "name": "Microsoft.NETCore.App.Runtime.osx-arm64",
             "version": "[10.0.2, 10.0.2]"
           }
         ],
@@ -433,7 +429,7 @@
       }
     },
     "runtimes": {
-      "osx-x64": {
+      "osx-arm64": {
         "#import": []
       }
     }
