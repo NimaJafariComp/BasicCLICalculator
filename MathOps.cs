@@ -5,6 +5,23 @@ namespace BasicCalculatorPart1
 {
     public static class MathOps
     {
+        // basic operations
+        public static decimal Add(decimal a, decimal b) => a + b;
+        public static decimal Subtract(decimal a, decimal b) => a - b;
+        public static decimal Multiply(decimal a, decimal b) => a * b;
+
+        public static decimal Divide(decimal a, decimal b)
+        {
+            if (b == 0m) throw new CalculatorException("Math error: division by zero is not allowed.");
+            return a / b;
+        }
+
+        public static decimal Reciprocal(decimal x)
+        {
+            if (x == 0m) throw new CalculatorException("Math error: 1/x is not allowed when x = 0.");
+            return 1m / x;
+        }
+
         // square root: uses double internally
         public static decimal SqrtDecimal(decimal x)
         {
@@ -69,6 +86,18 @@ namespace BasicCalculatorPart1
                     : a / bFrac,
                 _ => throw new CalculatorException("Invalid operator for percent mode.")
             };
+        }
+
+        // percent: a% of b
+        public static decimal PercentAOfB(decimal aPercent, decimal b)
+        {
+            return (aPercent / 100m) * b;
+        }
+
+        // percent: memory% of b
+        public static decimal PercentMemoryOfB(decimal memory, decimal b)
+        {
+            return (memory / 100m) * b;
         }
 
         // is value an integer (no fractional part)?

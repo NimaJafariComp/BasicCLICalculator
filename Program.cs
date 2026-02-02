@@ -170,10 +170,10 @@ namespace BasicCalculatorPart1
 
             decimal result = op switch
             {
-                "+" => a + b,
-                "-" => a - b,
-                "*" => a * b,
-                "/" => b == 0m ? throw new CalculatorException("Math error: division by zero is not allowed.") : a / b,
+                "+" => MathOps.Add(a, b),
+                "-" => MathOps.Subtract(a, b),
+                "*" => MathOps.Multiply(a, b),
+                "/" => MathOps.Divide(a, b),
                 _ => throw new CalculatorException("Unknown operation.")
             };
 
@@ -209,9 +209,7 @@ namespace BasicCalculatorPart1
         private static bool DoReciprocal()
         {
             decimal x = Input.ReadDecimal("Enter the number (x): ");
-            if (x == 0m) throw new CalculatorException("Math error: 1/x is not allowed when x = 0.");
-
-            decimal result = 1m / x;
+            decimal result = MathOps.Reciprocal(x);
             UI.Success($"Result = {UI.Format(result)}");
             UI.Pause();
             return true;
@@ -244,7 +242,7 @@ namespace BasicCalculatorPart1
                 decimal aPercent = Input.ReadDecimal("Enter A (percent value, e.g., 10 for 10%): ");
                 decimal b = Input.ReadDecimal("Enter B (whole value): ");
 
-                decimal result = (aPercent / 100m) * b;
+                decimal result = MathOps.PercentAOfB(aPercent, b);
                 UI.Success($"Result = {UI.Format(result)}");
                 UI.Pause();
                 return true;
@@ -263,10 +261,10 @@ namespace BasicCalculatorPart1
 
             decimal result = op switch
             {
-                "+" => memory + b,
-                "-" => memory - b,
-                "*" => memory * b,
-                "/" => b == 0m ? throw new CalculatorException("Math error: division by zero is not allowed.") : memory / b,
+                "+" => MathOps.Add(memory, b),
+                "-" => MathOps.Subtract(memory, b),
+                "*" => MathOps.Multiply(memory, b),
+                "/" => MathOps.Divide(memory, b),
                 _ => throw new CalculatorException("Unknown operation.")
             };
 
@@ -304,9 +302,7 @@ namespace BasicCalculatorPart1
         // reciprocal in memory mode
         private static bool DoMemoryReciprocal(ref decimal memory)
         {
-            if (memory == 0m) throw new CalculatorException("Math error: 1/x is not allowed when x = 0.");
-
-            decimal result = 1m / memory;
+            decimal result = MathOps.Reciprocal(memory);
             memory = result;
             UI.Success($"Result = {UI.Format(result)}");
             UI.Info($"Memory updated to: {UI.Format(memory)}");
@@ -341,7 +337,7 @@ namespace BasicCalculatorPart1
             {
                 decimal b = Input.ReadDecimal("Enter B (whole value): ");
 
-                decimal result = (memory / 100m) * b;
+                decimal result = MathOps.PercentMemoryOfB(memory, b);
                 memory = result;
                 UI.Success($"Result = {UI.Format(result)}");
                 UI.Info($"Memory updated to: {UI.Format(memory)}");
