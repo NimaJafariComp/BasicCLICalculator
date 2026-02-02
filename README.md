@@ -38,7 +38,6 @@ this is a tiny, and simple CLI calculator that runs in your terminal.
 - type `0`, `q`, `quit`, or `exit` to return to mode menu or quit
 
 ## notes
-- numbers use `.` as the decimal separator
 - sqrt and fractional powers use `double` internally, so you might see tiny precision differences for some extreme values
 - the program doesn't auto-clear the screen, so previous results stay visible for easy review
 - input validation prevents common errors (division by zero, negative square roots, etc.)
