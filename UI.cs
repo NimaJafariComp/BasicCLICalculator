@@ -55,7 +55,7 @@ namespace BasicCalculatorPart1
         public static void MemoryMenu(decimal currentMemory)
         {
             Console.WriteLine("╔══════════════════════════════════════════════╗");
-            Console.WriteLine($"║  Current Memory: {Format(currentMemory),-28} ║");
+            Console.WriteLine($"║  Current Memory: {Format(currentMemory),-28}║");
             Console.WriteLine("╠══════════════════════════════════════════════╣");
             Console.WriteLine("║  Memory Mode (operations use/update memory)  ║");
             Console.WriteLine("╠══════════════════════════════════════════════╣");
